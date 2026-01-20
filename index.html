@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of FAJAR & LAURA</title>
+    
+    <meta property="og:title" content="The Wedding of FAJAR & LAURA">
+    <meta property="og:description" content="Minggu, 20 Februari 2026. Mohon doa restu Bapak/Ibu/Saudara/i.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+    <meta property="og:type" content="website">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Pinyon+Script&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-hidden"> 
+
+    <section id="cover">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+            
+            <p class="wedding-title text-uppercase ls-2 mb-3">The Wedding of</p>
+            
+            <div class="cover-photo-wrapper mb-4">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Couple" class="cover-img">
+            </div>
+
+            <h1 class="couple-names mb-2">FAJAR & LAURA</h1>
+            <p class="fs-5 fst-italic text-muted mb-4">20 . 02 . 2026</p>
+            
+            <div class="guest-tag text-center mb-4">
+                <p class="mb-1 small text-uppercase text-muted">Kepada Yth:</p>
+                <h4 id="guest-name" class="fw-bold m-0 text-dark">Tamu Undangan</h4>
+            </div>
+
+            <button id="btn-open" class="btn-open">
+                <i class="bi bi-envelope-open me-2"></i> Buka Undangan
+            </button>
+        </div>
+    </section>
+
+    <section class="py-5 text-center position-relative bg-texture section-padding" style="padding-top: 100px !important;">
+        <div class="container" data-aos="fade-up">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Basmala.svg" class="mb-4 basmalah-img" width="200" alt="Bismillah" style="opacity: 0.6;">
+            
+            <p class="text-muted fst-italic px-4 mb-5 quote-text mx-auto" style="max-width: 700px; margin: 0 auto;">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya."<br><strong>(QS. Ar-Rum: 21)</strong></p>
+
+            <div class="row justify-content-center align-items-center mt-5 gap-4 gap-md-0">
+                <div class="col-md-5 mb-5" data-aos="fade-right">
+                    <div class="glass-card h-100 p-4">
+                        <div class="img-wrapper mb-4">
+                            <img src="assets/fajar.jpg" class="rounded-circle mempelai-img" width="180" height="180">
+                        </div>
+                        <h2 class="font-cinzel text-primary-custom">FAJAR AGUS RIYANTO</h2>
+                        <p class="text-muted">Putra dari Bpk. Fulan & Ibu Fulanah</p>
+                        <a href="#" class="btn btn-sm btn-outline-custom rounded-pill mt-2"><i class="bi bi-instagram"></i> @fajarags_</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 align-self-center display-1 font-vibes text-muted mb-5" data-aos="zoom-in">&</div>
+                
+                <div class="col-md-5 mb-5" data-aos="fade-left">
+                    <div class="glass-card h-100 p-4">
+                        <div class="img-wrapper mb-4">
+                            <img src="assets/laura.jpg" class="rounded-circle mempelai-img" width="180" height="180">
+                        </div>
+                        <h2 class="font-cinzel text-primary-custom">LAURA MOANE</h2>
+                        <p class="text-muted">Putri dari Bpk. Fulan & Ibu Fulanah</p>
+                        <a href="#" class="btn btn-sm btn-outline-custom rounded-pill mt-2"><i class="bi bi-instagram"></i> @pasangan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center bg-light section-padding">
+        <div class="container" data-aos="fade-up">
+            <h2 class="display-4 font-cinzel mb-4 text-primary-custom section-title">Save The Date</h2>
+            
+            <div class="row justify-content-center mb-5" id="countdown-box">
+                <div class="col-12 col-md-8">
+                    <div class="d-flex justify-content-center gap-2 gap-md-4 text-center">
+                        <div class="countdown-item glass-card p-2 p-md-3" style="min-width: 70px;">
+                            <h2 id="days" class="fw-bold text-primary-custom m-0">00</h2>
+                            <small class="text-muted small text-uppercase">Hari</small>
+                        </div>
+                        <div class="countdown-item glass-card p-2 p-md-3" style="min-width: 70px;">
+                            <h2 id="hours" class="fw-bold text-primary-custom m-0">00</h2>
+                            <small class="text-muted small text-uppercase">Jam</small>
+                        </div>
+                        <div class="countdown-item glass-card p-2 p-md-3" style="min-width: 70px;">
+                            <h2 id="minutes" class="fw-bold text-primary-custom m-0">00</h2>
+                            <small class="text-muted small text-uppercase">Menit</small>
+                        </div>
+                        <div class="countdown-item glass-card p-2 p-md-3" style="min-width: 70px;">
+                            <h2 id="seconds" class="fw-bold text-primary-custom m-0">00</h2>
+                            <small class="text-muted small text-uppercase">Detik</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="glass-card position-relative overflow-hidden p-0">
+                        <div class="row g-0">
+                            <div class="col-md-6 p-4 p-md-5 border-end-md border-bottom-sm">
+                                <h3 class="fw-bold mb-2 font-cinzel">Akad Nikah</h3>
+                                <div class="badge bg-custom mb-3 px-3 py-2">Minggu, 20 Feb 2026</div>
+                                <p class="fw-bold fs-4">08.00 - 10.00 WIB</p>
+                                <p class="small text-muted mb-0">Bertempat di:</p>
+                                <p class="fw-bold">Masjid Raya Al-Azhom</p>
+                            </div>
+                            <div class="col-md-6 p-4 p-md-5 bg-sage-light">
+                                <h3 class="fw-bold mb-2 font-cinzel">Resepsi</h3>
+                                <div class="badge bg-custom mb-3 px-3 py-2">Minggu, 20 Feb 2026</div>
+                                <p class="fw-bold fs-4">11.00 - Selesai</p>
+                                <p class="small text-muted mb-0">Bertempat di:</p>
+                                <p class="fw-bold">Ballroom Hotel Novotel</p>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-white border-top">
+                            <a href="#" class="btn btn-custom px-4 shadow w-100 w-md-auto"><i class="bi bi-geo-alt-fill"></i> Lihat Lokasi Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-texture text-center section-padding">
+        <div class="container" data-aos="fade-up">
+            <h2 class="font-cinzel display-5 mb-3 text-primary-custom section-title">Wedding Gift</h2>
+            <p class="text-muted mb-5 col-md-8 mx-auto px-3">Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+            
+            <button class="btn btn-custom shadow-lg px-4 py-3" data-bs-toggle="modal" data-bs-target="#giftModal">
+                <i class="bi bi-gift-fill me-2"></i> Kirim Hadiah
+            </button>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light section-padding">
+        <div class="container col-md-6" data-aos="fade-up">
+            <div class="glass-card p-4 p-md-5">
+                <h2 class="text-center font-cinzel display-5 mb-4 text-primary-custom section-title">RSVP</h2>
+                <p class="text-center text-muted mb-4">Mohon konfirmasi kehadiran Anda untuk membantu kami mempersiapkan acara.</p>
+                <form id="rsvpForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase">Nama Lengkap</label>
+                        <input type="text" class="form-control bg-light border-0 py-3" name="nama" id="form-nama" placeholder="Isikan Nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase">Jumlah Hadir</label>
+                        <select class="form-select bg-light border-0 py-3" name="jumlah">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="0">Maaf, Tidak Bisa Hadir</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase">Ucapan & Doa</label>
+                        <textarea class="form-control bg-light border-0" name="ucapan" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100 py-3 fw-bold mt-2 shadow">
+                        <i class="bi bi-send-fill me-2"></i> Kirim Konfirmasi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center footer-custom section-padding">
+        <div class="container">
+            <div class="mb-4 text-primary-custom display-4 font-vibes" data-aos="fade-up">Terima Kasih</div>
+            
+            <p class="mb-5 fst-italic col-md-8 mx-auto text-muted px-3" style="line-height: 1.8;" data-aos="fade-up" data-aos-delay="100">
+                "Ungkapan terima kasih yang tulus dari kami atas doa dan kehadiran Bapak/Ibu/Saudara/i. Semoga menjadi keberkahan bagi kita semua."
+            </p>
+
+            <h2 class="font-cinzel fw-bold mb-4 text-primary-custom ls-2 fs-3" data-aos="zoom-in">FAJAR & LAURA</h2>
+            
+            <hr class="w-25 mx-auto mb-4 opacity-25 border-dark">
+            
+            <p class="small mb-0 text-muted">
+                Design & Code with <i class="bi bi-heart-fill text-danger"></i> by <strong class="text-primary-custom">FAJAR AGUS RIYANTO</strong>
+                <br>
+                &copy; 2026. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="giftModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-cinzel text-primary-custom">Rekening Mempelai</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="p-3 bg-white rounded shadow-sm mb-3 border">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" width="100" class="mb-3">
+                        <p class="mb-0 text-muted small">No. Rekening:</p>
+                        <h4 class="fw-bold text-dark my-1" id="rek1">1234567890</h4> <p class="mb-2">a.n FAJAR AGUS</p>
+                        <button class="btn btn-sm btn-outline-custom" onclick="copyText('rek1')">
+                            <i class="bi bi-files"></i> Salin Nomor
+                        </button>
+                    </div>
+                    <div class="p-3 bg-white rounded shadow-sm border">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" width="100" class="mb-3">
+                        <p class="mb-0 text-muted small">No. Rekening:</p>
+                        <h4 class="fw-bold text-dark my-1" id="rek2">0987654321</h4> <p class="mb-2">a.n LAURA</p>
+                        <button class="btn btn-sm btn-outline-custom" onclick="copyText('rek2')">
+                            <i class="bi bi-files"></i> Salin Nomor
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <p class="small text-muted fst-italic">Terima kasih atas doa & hadiah yang diberikan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div id="music-control" class="shadow-lg">
+        <i class="bi bi-music-note-beamed"></i>
+    </div>
+    
+    <audio id="bg-music" loop preload="auto">
+        <source src="musik.mp3.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
